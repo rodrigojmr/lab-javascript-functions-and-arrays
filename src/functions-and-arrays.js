@@ -678,5 +678,3 @@ function greatestProductOfDiagonals(matrix) {
   }
   return maxProduct;
 }
-
-greatestProductOfDiagonals();
