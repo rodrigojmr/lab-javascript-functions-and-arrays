@@ -650,7 +650,7 @@ function greatestProductOfDiagonals(matrix) {
   let rows = matrix[0].length;
   let columns = matrix.length;
   let maxProduct = 0;
-  // Going through each row, multiply 4 elements in each column
+  // Going through each row
   for (let row = 0; row <= rows - 4; row++) {
     for (let column = 0; column <= columns - 4; column++) {
       let product =
@@ -663,7 +663,7 @@ function greatestProductOfDiagonals(matrix) {
       }
     }
   }
-  // Going through each column, multiply 4 elements in each row
+  // Going through each row in reverse
   for (let row = rows.length; row <= 3; row--) {
     for (let column = 0; column <= 3; column--) {
       let product =
