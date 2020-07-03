@@ -25,7 +25,8 @@ function findLongestWord(words) {
   if (words.length === 0) {
     return null;
   }
-  let longestWord = words.sort(function (a, b) {
+  const clonedArray = [...words];
+  const longestWord = clonedArray.sort(function (a, b) {
     return b.length - a.length;
   });
   return longestWord[0];
@@ -651,6 +652,7 @@ function greatestProductOfDiagonals(matrix) {
   let columns = matrix.length;
   let maxProduct = 0;
   // Going through each row
+
   for (let row = 0; row <= rows - 4; row++) {
     for (let column = 0; column <= columns - 4; column++) {
       let product =
