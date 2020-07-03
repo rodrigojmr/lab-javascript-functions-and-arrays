@@ -26,10 +26,10 @@ function findLongestWord(words) {
     return null;
   }
   const clonedArray = [...words];
-  const longestWord = clonedArray.sort(function (a, b) {
+  const sortedArray = clonedArray.sort(function (a, b) {
     return b.length - a.length;
   });
-  return longestWord[0];
+  return sortedArray[0];
 }
 
 // Iteration #3: Calculate the sum
